@@ -5,7 +5,7 @@
 | Jonas Ferro             |                |
 | Malanie Romero Orreaga  |                |
 | Jan Locher              |                |
-| Justine Herzog          |                |
+| Justine Herzog          | 		   |
 
 # Coaches
 
@@ -20,7 +20,7 @@ Digitalize and automate the IT maintenance account onboarding process by impleme
 
 The current onboarding process for IT maintenance accounts at the University of Basel is largely manual and fragmented. It involves multiple steps, approvals, and frequent back-and-forth communication, leading to inefficiencies and delays.
 
-The process follows these steps:
+## The process follows these steps:
 	1. The applicant (typically an external partner) submits a request form via email or paper.
 	2. The IT Service Desk (SD) manually verifies the completeness of the form.
 	3. If questions arises or details are missing, SD contacts the applicant, which can lead to multiple iterations.
@@ -30,13 +30,13 @@ The process follows these steps:
 	7. Once approved by the SD, the IT Service Desk manually enters the data into the SAP IDM system.
 	8. SAP IDM creates account according to input 
 	9. The Service Desk receives the account details and manually generates a master data sheet for the applicant and send it via physical mail. 
-  10. Once the applicant has set the password, the maintenance account is active 
+  	10. Once the applicant has set the password, the maintenance account is active 
 
 --> Add Image Workflow AS-IS 
 
 ## Challenges of the AS-IS Process
 
-  - The basic account types do not accommodate those diverse permission requirements, creating frequent mismatches with operational needs. This leads to the situation where permission requests cannot be fully handled through the form, necessitating additional steps via ticketing and the SD.
+- The basic account types do not accommodate those diverse permission requirements, creating frequent mismatches with operational needs. This leads to the situation where permission requests cannot be fully handled through the form, necessitating additional steps via ticketing and the SD.
 	- The lack of automation in determining suitable accounts results in a manual and error-prone decision-making process.
 	- Frequent manual errors due to paper-based handling.
 	- No structured approval routing, causing inconsistent decision-making.The excessive signature requirements for the maintenance account cause confusion and inefficient communication with service providers (applicants). Also, sometimes the form is sent to the wrong approver.
