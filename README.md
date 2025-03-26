@@ -20,7 +20,7 @@ Digitalize and automate the IT maintenance account onboarding process by impleme
 
 The current onboarding process for IT maintenance accounts at the University of Basel is largely manual and fragmented. It involves multiple steps, approvals, and frequent back-and-forth communication, leading to inefficiencies and delays.
 
-## The process follows these steps:
+The process follows these steps:
 	1. The applicant (typically an external partner) submits a request form via email or paper.
 	2. The IT Service Desk (SD) manually verifies the completeness of the form.
 	3. If questions arises or details are missing, SD contacts the applicant, which can lead to multiple iterations.
@@ -32,7 +32,7 @@ The current onboarding process for IT maintenance accounts at the University of 
 	9. The Service Desk receives the account details and manually generates a master data sheet for the applicant and send it via physical mail. 
   	10. Once the applicant has set the password, the maintenance account is active 
 
---> Add Image Workflow AS-IS 
+![AS-IS Process](AS-IS%20Process.png)
 
 ## Challenges of the AS-IS Process
 
