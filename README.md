@@ -74,6 +74,10 @@ Swimlanes:
 1. 2x Send Rejection Email: Sent when a request is denied.
 2. Send Email asking for feedback: Sent when additional information is required from the applicant.
 3. Send Information Email: Sent after account creation to inform the applicant that credentials will be sent via post.
+   
+
+<img width="830" alt="Send Information Email" src="https://github.com/user-attachments/assets/1167d798-d1a3-49a9-918a-324d5e5ba59a" />
+
 
 Each email scenario is triggered via a "webhook custom" module and executed through "My others SMTP connections" using the module "send an email".
 
