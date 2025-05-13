@@ -5,7 +5,7 @@
 | Jonas Ferro             |                |
 | Malanie Romero Orreaga  |                |
 | Jan Locher              |                |
-| Justine Herzog          | 		   |
+| Justine Herzog          | justine.herzog		   |
 
 # Coaches
 
