@@ -69,7 +69,7 @@ Swimlanes:
 ## 2.2 How to run the process 
   ### 2.2.1 Service tasks 
 
-Implementation of four automated emails in Make: 
+*Implementation of four automated emails in Make: 
 
 1. 2x Send Rejection Email: Sent when a request is denied.
 2. Send Email asking for feedback: Sent when additional information is required from the applicant.
@@ -77,8 +77,9 @@ Implementation of four automated emails in Make:
 
 Each email scenario is triggered via a "webhook custom" module and executed through "My others SMTP connections" using the module "send an email".
 
+![Send Rejection Email_Make](https://github.com/user-attachments/assets/b4b420ec-b088-450b-9dd3-88a33d155ffa)
 
-  
+
   
   ### 2.2.2 User tasks 
   
