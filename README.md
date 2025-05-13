@@ -73,36 +73,56 @@ Swimlanes:
 
 1. 2x Send Rejection Email: Sent when a request is denied.
 2. Send Email asking for feedback: Sent when additional information is required from the applicant.
-3. Send Information Email: Sent after account creation to inform the applicant that credentials will be sent via post.
+3. Receive Email Feedback: The applicant replies to the email.
+4. Send Information Email: Sent after account creation to inform the applicant that credentials will be sent via post.
    
 
 <img width="830" alt="Send Information Email" src="https://github.com/user-attachments/assets/1167d798-d1a3-49a9-918a-324d5e5ba59a" />
 
 
-Each email scenario is triggered via a "webhook custom" module and executed through "My others SMTP connections" using the module "send an email".
+Each email scenario is triggered via a "custom webhook" module and executed through "My others SMTP connections" using the module "send an email" except for the email replying to it. 
 
 ![Send Rejection Email_Make](https://github.com/user-attachments/assets/b4b420ec-b088-450b-9dd3-88a33d155ffa)
 
+![Receive Email Feedback 1](https://github.com/user-attachments/assets/81703a19-3456-47a0-839c-cdd2704b1324)
 
-  
-  ### 2.2.2 User tasks 
+<img width="830" alt="Send Information Email" src="https://github.com/user-attachments/assets/1167d798-d1a3-49a9-918a-324d5e5ba59a" />
+
+
+
+* Send Account Creation Request to SAP IDM:
+
+
+
+![SAP IDM Response](https://github.com/user-attachments/assets/a8b37947-9abb-4efb-9bf6-55edc6a1c5f0)
+
+
+* Adding a Google Sheet to Store Process Outcome:
+
+This step stores the collected datas from the form in a Google Sheet.
+
+![Store Process Outcome](https://github.com/user-attachments/assets/b2c553a8-8ae6-47b0-93a4-7ea66dc82270)
+
+
+
+  (### 2.2.2 User tasks) 
+
+
+
   
   ### 2.2.3 Decisions Tables  
 
-- Camunda evaluates the request based on predefined DMN decision tables.
-   - Depending on the decision outcome, the request is either forwarded for approval or flagged for revision.
+1. Account Permissions
+   
+3. Forward to Approver 
   
 ### 2.2.4 User Interface 
 
 1. **Set Up the Google Form**  
-   - Ensure the form is designed with all required fields.  
-   - Configure responses to be saved in Google Sheets.
-2. **Integrate Google Form with Make**  
-   - Use Make to monitor new submissions.
-   - Set up an automation scenario that transfers form responses to Camunda.
-3. **Trigger the Camunda Workflow**
-   - Once Make detects a new form submission, it triggers the process instance in Camunda.
-   - The request data (applicant details, access type, required approvals) is passed as process variables.
+
+![Start Process: Receive Form Content](https://github.com/user-attachments/assets/8efccc06-8bc7-4be1-a834-232d8fea760e)
+
+
 
 # 3. Benefits 
 
