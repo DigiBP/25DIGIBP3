@@ -67,18 +67,15 @@ Swimlanes:
 
 
 ## 2.2 How to run the process 
-  ### 2.2.1 Service tasks 
 
-*Implementation of four automated emails in Make: 
+  ## 2.2.1 Service tasks :gear:
+ 
+### :e-mail: *Implementation of four automated emails in Make: 
 
 1. 2x Send Rejection Email: Sent when a request is denied.
 2. Send Email asking for feedback: Sent when additional information is required from the applicant.
 3. Receive Email Feedback: The applicant replies to the email.
 4. Send Information Email: Sent after account creation to inform the applicant that credentials will be sent via post.
-   
-
-<img width="830" alt="Send Information Email" src="https://github.com/user-attachments/assets/1167d798-d1a3-49a9-918a-324d5e5ba59a" />
-
 
 Each email scenario is triggered via a "custom webhook" module and executed through "My others SMTP connections" using the module "send an email" except for the email replying to it. 
 
@@ -90,39 +87,57 @@ Each email scenario is triggered via a "custom webhook" module and executed thro
 
 
 
-* Send Account Creation Request to SAP IDM:
+### * Send Account Creation Request to SAP IDM:
 
-
+--> Jonas can you explain? 
 
 ![SAP IDM Response](https://github.com/user-attachments/assets/a8b37947-9abb-4efb-9bf6-55edc6a1c5f0)
 
 
-* Adding a Google Sheet to Store Process Outcome:
+### * Adding a Google Sheet to Store Process Outcome:
 
 This step stores the collected datas from the form in a Google Sheet.
 
 ![Store Process Outcome](https://github.com/user-attachments/assets/b2c553a8-8ae6-47b0-93a4-7ea66dc82270)
 
-
-
-  (### 2.2.2 User tasks) 
-
-
-
   
-  ### 2.2.3 Decisions Tables  
+  ## 2.2.2 Decisions Tables :memo: 
 
-1. Account Permissions
-   
-3. Forward to Approver 
-  
-### 2.2.4 User Interface 
+1. DMN Implementation – Account Permissions:
+
+This DMN table defines the permission levels granted to different external partners based on their role and internal team association. This table helps standardize permission allocation, reducing manual decision-making and ensuring consistent access rights.
+
+<img width="1249" alt="Account Permissions DMN " src="https://github.com/user-attachments/assets/9cfa1af0-8998-4a09-b39b-fdaadd7d137c" />
+
+2. DMN Implementation - Forward to Approver
+
+This DMN table is used to determine the correct approver based on the faculty and department identified in the application form.
+
+Inputs include:
+- Faculty (e.g., Theology, Law...)
+- Approver List (e.g., predefined list of approvers for each faculty)
+
+Outputs the correct approver based on predefined business rules and mappings. This ensures that requests are routed to the appropriate decision-makers, minimizing routing errors.
+
+<img width="1251" alt="Forward To Approver DMN " src="https://github.com/user-attachments/assets/e8085382-6a5e-4986-9263-be883ccfca33" />
+
+
+## 2.2.3 User Interface :desktop_computer:
 
 1. **Set Up the Google Form**  
 
 ![Start Process: Receive Form Content](https://github.com/user-attachments/assets/8efccc06-8bc7-4be1-a834-232d8fea760e)
 
+## 2.2.4 User Tasks :bust_in_silhouette:
 
+In our To BE process we will still have remaining user tasks such as: 
+- Check Form
+- Read and Approve Answer
+- Implement Feedback
+- Approve/Reject Request
+- Check Approved Request
+- Read and Approve Answer (Feedback Loop)
+- Check the SAP response and approve
 
 # 3. Benefits 
 
