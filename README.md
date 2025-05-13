@@ -5,7 +5,7 @@
 | Jonas Ferro             |                |
 | Malanie Romero Orreaga  |                |
 | Jan Locher              |                |
-| Justine Herzog          | justine.herzog		   |
+| Justine Herzog          | justine.herzog@students.fhnw.ch |
 
 # Coaches
 
