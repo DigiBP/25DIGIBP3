@@ -61,9 +61,24 @@ This challenges highlights the need for digital transformation, which our To-Be 
 - Account information and credentials are dispatched via post and informed via email.
 - The process outcomes are stored in a google sheet, and a confirmation email is sent to the applicant.
 
+Swimlanes: 
+- New: "Backend System" --> explanation? 
+- Removed: "SAP IDM" from swimlanes and added it in a new pool --> Explanation? 
+
 
 ## 2.2 How to run the process 
   ### 2.2.1 Service tasks 
+
+Implementation of four automated emails in Make: 
+
+1. 2x Send Rejection Email: Sent when a request is denied.
+2. Send Email asking for feedback: Sent when additional information is required from the applicant.
+3. Send Information Email: Sent after account creation to inform the applicant that credentials will be sent via post.
+
+Each email scenario is triggered via a "webhook custom" module and executed through "My others SMTP connections" using the module "send an email".
+
+
+  
   
   ### 2.2.2 User tasks 
   
