@@ -16,7 +16,7 @@
 
 Digitalize and automate the IT maintenance account onboarding process by implementing decision logic using DMN tables, integrating external services for approval handling and email notifications. The goal is to improve the user experience through structured workflows and form submissions and also to save time the approver through automated activities.
 
-# AS-IS Process
+# 1. AS-IS Process
 
 The current onboarding process for IT maintenance accounts at the University of Basel is largely manual and fragmented. It involves multiple steps, approvals, and frequent back-and-forth communication, leading to inefficiencies and delays.
 
@@ -34,7 +34,7 @@ The process follows these steps:
 
 ![AS-IS Process](AS-IS%20Process.png)
 
-## Challenges of the AS-IS Process
+## 1.1 Challenges of the AS-IS Process
 
 - The basic account types do not accommodate those diverse permission requirements, creating frequent mismatches with operational needs. This leads to the situation where permission requests cannot be fully handled through the form, necessitating additional steps via ticketing and the SD.
 	- The lack of automation in determining suitable accounts results in a manual and error-prone decision-making process.
@@ -45,45 +45,46 @@ The process follows these steps:
 
 This challenges highlights the need for digital transformation, which our To-Be process aims to address.
 
-# How to Run the Process
+
+
+# 2. TO-BE: 
+
+## 2.1 Overview of the TO BE Process 
+
+--> screenshot of the to be process 
+
+- The process begins with the submission of a google form by the applicant.
+- The form is received and forwarded to the appropriate approver.
+- The approver checks the form for completeness and requests feedback if necessary.
+- A rejection email is sent if the request is denied.
+- If approved, the process continues to account creation and password generation.
+- Account information and credentials are dispatched via post and informed via email.
+- The process outcomes are stored in a google sheet, and a confirmation email is sent to the applicant.
+
+
+## 2.2 How to run the process 
+  ### 2.2.1 Service tasks 
+  
+  ### 2.2.2 User tasks 
+  
+  ### 2.2.3 Decisions Tables  
+
+- Camunda evaluates the request based on predefined DMN decision tables.
+   - Depending on the decision outcome, the request is either forwarded for approval or flagged for revision.
+  
+### 2.2.4 User Interface 
 
 1. **Set Up the Google Form**  
    - Ensure the form is designed with all required fields.  
    - Configure responses to be saved in Google Sheets.
-
-2. **Integrate Google Form with Make (Integromat)**  
+2. **Integrate Google Form with Make**  
    - Use Make to monitor new submissions.
    - Set up an automation scenario that transfers form responses to Camunda.
-
 3. **Trigger the Camunda Workflow**
    - Once Make detects a new form submission, it triggers the process instance in Camunda.
    - The request data (applicant details, access type, required approvals) is passed as process variables.
 
-4. **Decision Table**
-   - Camunda evaluates the request based on predefined DMN decision tables.
-   - Depending on the decision outcome, the request is either forwarded for approval or flagged for revision.
-
-5. **Approval Workflow**
-   - If approval is required, the process routes the request to the correct approver based on role-based rules.
-   - The approver receives a task in Camunda Tasklist and can approve or reject the request.
-
-6. **Automated Email Notification**
-   - Once the request is approved, an automated email is sent to the applicant with login details and instructions.
-   - If rejected, the applicant is notified via email with the reason for rejection. 
-
-7. **Automated Email Notification**
-   - In this prototype, account creation is mocked using a Flask API or a simulated service.
-   - Future integration could include real SAP IDM system integration for actual account provisioning.
-
-
-# TO-BE: 
-## 6.1 Make Scenarios
-  ### 6.1.1Google Form 
-  ### 6.1.2 Send Email notifications
-  ### 6.1.3 Simulation of SAP Account creation 
-## 6.2 Integration of DMN - Decision Tables
-
-# Benefeits 
+# 3. Benefits 
 
 # Technologies 
 
