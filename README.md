@@ -3,7 +3,7 @@
 | Name                    | Email          |
 |-------------------------|----------------|
 | Jonas Ferro             | jonas.ferro@students.fhnw.ch               |
-| Malanie Romero Orreaga  |                |
+| Malanie Romero Orreaga  | melanieyajahira.romeroorreaga@students.fhnw.ch               |
 | Jan Locher              | jan.locher@students.fhnw.ch               |
 | Justine Herzog          | justine.herzog@students.fhnw.ch |
 
