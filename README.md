@@ -10,7 +10,8 @@
 # Coaches
 
 - Andreas Martin  
-- Charuta Pande  
+- Charuta Pande
+- Devid Montecchiari
 
 # Project Goals
 
