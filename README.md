@@ -189,6 +189,36 @@ In our To BE process we still have remaining user tasks such as:
 
 # 3. Benefits 
 
+1. Process Standardization
+- Ensures consistent handling of all onboarding requests.
+
+2. Automation of Repetitive Tasks
+- Automated email notifications (rejection, feedback request, approval).
+- Automatic routing to correct approver via decision tables.
+
+3. Faster Turnaround Time
+- Requests are processed and routed immediately without waiting on manual forwarding.
+- Feedback loops and approvals are streamlined, reducing unnecessary back-and-forth.
+  
+4. Improved User Experience
+- Applicants complete their request in a google form and not on paper anymore. 
+- Applicants receive immediate confirmation and updates via email.
+
+5. Error Reduction
+- Decision tables reduce human error in determining permissions or routing logic.
+
+6. Better Traceability and Transparency
+- More steps are logged and traceable (e.g.
+- Better traceability with the storage of the data form in the google sheet. 
+
+7. Integration with External Tools
+- Connected with Google Forms (front-end) and Make (workflow automation).
+- Simulated integration with SAP IDM, ready for future real system connections.
+  
+8. Time Savings for IT Staff
+- Fewer manual approvals and emails.
+
+
 # Technologies 
 
 | Component               | Purpose           |
