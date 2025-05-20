@@ -74,9 +74,9 @@ Swimlanes:
  
 ### :e-mail: *Implementation of four automated emails in Make: 
 
-1. 2x Send Rejection Email: Sent when a request is denied.
+1. Send Rejection Email: Sent when a request is denied.
 2. Send Email asking for feedback: Sent when additional information is required from the applicant.
-3. Receive Email Feedback: The applicant replies to the email.
+3. Receive Email Feedback: The applicant sends their feedback to a designated email adress.
 4. Send Information Email: Sent after account creation to inform the applicant that credentials will be sent via post.
 
 Each email scenario is triggered via a "custom webhook" module and executed through "My others SMTP connections" using the module "send an email" except for the email replying to it. 
