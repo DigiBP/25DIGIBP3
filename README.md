@@ -152,6 +152,18 @@ In our To BE process we will still have remaining user tasks such as:
 
 # Technologies 
 
+| Component               | Purpose           |
+|-------------------------|-------------------|
+| BPMN 2.0 | ???                  |
+| DMN | ???                  |
+| Camunda 7 | ???                  |
+| Camunda REST API | ???                  |
+| Make.com | ???                  |
+| Google Forms | ???                  |
+| Google Sheets | ???                  |
+| GMX Email Adress | ???                  |
+
+
 # Conclusion 
 
 # References 
