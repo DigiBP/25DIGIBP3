@@ -133,6 +133,8 @@ This DMN table defines the permission levels granted to different external partn
 
 2. **Sending Form Data to the Process**
 
+The date from the filled out form is sent to the process via HTTP POST. This also starts a new process instance.
+
 ![Start Process: Receive Form Content](https://github.com/user-attachments/assets/8efccc06-8bc7-4be1-a834-232d8fea760e)
 
 ## 2.2.4 User Tasks :bust_in_silhouette:
