@@ -58,8 +58,9 @@ This challenges highlights the need for digital transformation, which our To-Be 
 - The form is received and forwarded to the appropriate approver.
 - The approver checks the form for completeness and requests feedback if necessary.
 - A rejection email is sent if the request is denied.
-- If approved, the process continues to account creation and password generation.
-- Account information and credentials are dispatched via post and informed via email.
+- If approved, the process continues with forwarding the form to the Service Desk. The Service Desk checks the thechnical requirements and also has the possibility to request feedback if necessary.
+- If the Service Desk finds no problem, the account creation and password generation are initiated.
+- Account information and credentials are dispatched via post and the customer is informed via email.
 - The process outcomes are stored in a google sheet, and a confirmation email is sent to the applicant.
 
 Swimlanes: 
