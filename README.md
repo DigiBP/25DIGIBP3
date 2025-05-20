@@ -129,7 +129,10 @@ This DMN table defines the permission levels granted to different external partn
 
 1. **The Google Form**
 
---> insert screenshot & link
+<img width="215" alt="image" src="https://github.com/user-attachments/assets/e5b7b512-3273-4602-8dfa-3e68ab4273fd" />
+<img width="242" alt="image" src="https://github.com/user-attachments/assets/ba5e7e5b-687a-4a8a-889c-f33bdbdf4ef6" />
+
+
 
 2. **Sending Form Data to the Process**
 
