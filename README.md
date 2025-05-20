@@ -81,6 +81,10 @@ Swimlanes:
 
 Each email scenario is triggered via a "custom webhook" module and executed through "My others SMTP connections" using the module "send an email" except for the "Receive Email Feedback" which uses a Custom Mailhook and then sends the data to the process via HTTP PUSH.
 
+**GMX – Email Handling (Applicant Notification & Replies)**
+
+GMX serves as the communication hub for interacting with applicants throughout the process. It is used to send and receive structured email messages, including feedback, and  approvals. These email communications is automatically triggered by tools like Make and Camunda, ensuring timely and consistent updates to the applicant.
+
 ![Send Rejection Email_Make](https://github.com/user-attachments/assets/b4b420ec-b088-450b-9dd3-88a33d155ffa)
 
 ![Receive Email Feedback 1](https://github.com/user-attachments/assets/81703a19-3456-47a0-839c-cdd2704b1324)
