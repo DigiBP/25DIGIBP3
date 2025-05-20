@@ -90,7 +90,8 @@ GMX serves as the communication hub for interacting with applicants throughout t
 
 ![Receive Email Feedback 1](https://github.com/user-attachments/assets/81703a19-3456-47a0-839c-cdd2704b1324)
 
-<img width="830" alt="Send Information Email" src="https://github.com/user-attachments/assets/1167d798-d1a3-49a9-918a-324d5e5ba59a" />
+![image](https://github.com/user-attachments/assets/e311f0e9-93ab-4ed4-9ebc-d4daa2e4ad9d)
+
 
 
 
