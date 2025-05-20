@@ -221,20 +221,24 @@ In our To BE process we still have remaining user tasks such as:
 
 # Technologies 
 
-| Component               | Purpose           |
-|-------------------------|-------------------|
-| BPMN 2.0 | ???                  |
-| DMN | ???                  |
-| Camunda 7 | ???                  |
-| Camunda REST API | ???                  |
-| Make.com | ???                  |
-| HTTP Requests | ???                  |
-| Google Forms | ???                  |
-| Google Sheets | ???                  |
-| GMX Email Adress | ???                  |
+
+- BPMN 2.0                 
+- DMN                   
+- Camunda                  
+- Camunda REST API                   
+- Make.com                   
+- HTTP Requests                   
+- Google Forms                 
+- Google Sheets                  
+- GMX Email Adress 
 
 
 # Conclusion 
+
+The digitalization of the IT maintenance account onboarding process at the University of Basel represents an advancement over the previous manual workflow. By integrating tools like Google Forms, Make, and Camunda, the project automates key steps such as form submission, approval routing, email notifications, and data storage. The new process minimizes manual errors, shortens turnaround times, and improves transparency for all stakeholders. With the use of DMN tables, approvals and permission assignments are now managed more consistently and accurately, while automated emails keep applicants informed throughout the process. Although some human tasks remain, the overall workload for the IT Service Desk and approvers has been reduced. The project not only modernizes a fragmented process but also establishes a solid foundation for future integrations, providing a scalable and user-friendly framework for managing maintenance account requests.
+
+
+
 
 # References 
 
