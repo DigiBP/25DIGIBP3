@@ -132,6 +132,13 @@ This DMN table defines the permission levels granted to different external partn
 <img width="215" alt="image" src="https://github.com/user-attachments/assets/e5b7b512-3273-4602-8dfa-3e68ab4273fd" />
 <img width="242" alt="image" src="https://github.com/user-attachments/assets/ba5e7e5b-687a-4a8a-889c-f33bdbdf4ef6" />
 
+To improve and digitize the form submission process, Google Forms is used as a user-friendly and standardized input method. Instead of sending forms via paper or email, applicants can fill out a structured digital form online. This form includes validation rules and conditional logic to guide users through the process, ensuring all required information is provided correctly.
+This approach offers several benefits for the user:
+- Standardization of requests to reduce inconsistencies in submissions.
+- Error reduction is achieved through the enforcement of mandatory fields and proper input formats. 
+- Ease of use, since external partners can access the form from any device via a simple link.
+- Instant submission allows the collected data to be fed directly into downstream systems, such as Make or Google Sheets, for further processing and automation.
+
 
 
 2. **Sending Form Data to the Process**
@@ -139,6 +146,31 @@ This DMN table defines the permission levels granted to different external partn
 The data from the filled out form is sent to the process via HTTP POST. This also starts a new process instance.
 
 ![Start Process: Receive Form Content](https://github.com/user-attachments/assets/8efccc06-8bc7-4be1-a834-232d8fea760e)
+
+This image displays a Make automation scenario that connects Google Sheets with a system via an HTTP request, and it was a helpful step in our project to link Google Forms with Camunda. 
+In the workflow, applicants submit requests through a Google Form. The responses from that form are automatically stored in a Google Sheet. To trigger the Camunda process based on this submission, we use Make to monitor the sheet and send the data to Camunda via HTTP.
+
+**Google Sheets**
+
+In the workflow, applicants submit requests through a Google Form. The responses from that form are automatically stored in a Google Sheet. To trigger the Camunda process based on this submission, we use Make to monitor the sheet and send the data to Camunda via HTTP.
+
+**HTTP (Make a request)**
+
+In this step, the HTTP module in Make is used to send a POST request to the Camunda REST API, triggering the start of a new workflow instance. The request includes a payload containing the form data extracted from the new Google Sheet row, such as the applicant’s details, type of access requested, and any additional information submitted through the form. The HTTP request is directed to a specific Camunda endpoint designed to initiate a process, allowing Camunda to automatically begin handling the request based on the predefined BPMN workflow. This seamless connection ensures that every valid form submission enters the structured review and approval process without delay.
+
+**Camunda**
+
+To orchestrate and manage the workflow, Camunda serves as a robust process automation engine. Camunda manages each stage of the request lifecycle, including reviews, approvals, and decision points. It tracks the status of each request in real time, whether it is awaiting an approver, returned for corrections, or ready for completion.
+Key benefits of using Camunda in this process include:
+- Process transparency: Camunda provides a clear overview, allowing stakeholders to track the status of every request at any stage.
+- Custom workflows: It can model and execute complex processes, including conditional paths and loops for handling incomplete or incorrect submissions.
+- Role-based access control: Only designated users can review and make decisions, ensuring security and compliance.
+- Audit trails: Every action is recorded, providing traceability, enhanced reporting, and opportunities for process improvement.
+By implementing Camunda, Basel University can gain control, visibility, and flexibility over the entire approval and account creation process.
+
+
+
+
 
 ## 2.2.4 User Tasks :bust_in_silhouette:
 
