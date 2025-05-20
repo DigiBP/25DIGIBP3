@@ -83,7 +83,7 @@ Each email scenario is triggered via a "custom webhook" module and executed thro
 
 **GMX – Email Handling (Applicant Notification & Replies)**
 
-GMX serves as the communication hub for interacting with applicants throughout the process. It is used to send and receive structured email messages, including feedback, and  approvals. These email communications is automatically triggered by tools like Make and Camunda, ensuring timely and consistent updates to the applicant.
+GMX serves as the communication hub for interacting with applicants throughout the process. It is used to send and receive structured email messages, including feedback, and  approvals. These email communications is automatically triggered by Make and Camunda, ensuring timely and consistent updates to the applicant.
 
 ![Send Rejection Email_Make](https://github.com/user-attachments/assets/b4b420ec-b088-450b-9dd3-88a33d155ffa)
 
