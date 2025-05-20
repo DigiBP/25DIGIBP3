@@ -127,7 +127,10 @@ This DMN table defines the permission levels granted to different external partn
 
 ## 2.2.3 User Interface :desktop_computer:
 
-1. **Set Up the Google Form**  
+1. **The Google Form**
+--> insert screenshot & link
+
+2. **Sending Form Data to the Process**
 
 ![Start Process: Receive Form Content](https://github.com/user-attachments/assets/8efccc06-8bc7-4be1-a834-232d8fea760e)
 
