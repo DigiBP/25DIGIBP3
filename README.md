@@ -79,7 +79,7 @@ Swimlanes:
 3. Receive Email Feedback: The applicant sends their feedback to a designated email adress.
 4. Send Information Email: Sent after account creation to inform the applicant that credentials will be sent via post.
 
-Each email scenario is triggered via a "custom webhook" module and executed through "My others SMTP connections" using the module "send an email" except for the email replying to it. 
+Each email scenario is triggered via a "custom webhook" module and executed through "My others SMTP connections" using the module "send an email" except for the "Receive Email Feedback" which uses a Custom Mailhook and then sends the data to the process via HTTP PUSH.
 
 ![Send Rejection Email_Make](https://github.com/user-attachments/assets/b4b420ec-b088-450b-9dd3-88a33d155ffa)
 
