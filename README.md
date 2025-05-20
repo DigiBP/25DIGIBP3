@@ -136,6 +136,8 @@ This DMN table defines the permission levels granted to different external partn
 
 <img width="215" alt="image" src="https://github.com/user-attachments/assets/e5b7b512-3273-4602-8dfa-3e68ab4273fd" />
 <img width="242" alt="image" src="https://github.com/user-attachments/assets/ba5e7e5b-687a-4a8a-889c-f33bdbdf4ef6" />
+![image](https://github.com/user-attachments/assets/9097746d-2e57-4a46-8f80-85cebe410060)
+
 
 To improve and digitize the form submission process, Google Forms is used as a user-friendly and standardized input method. Instead of sending forms via paper or email, applicants can fill out a structured digital form online. This form includes validation rules and conditional logic to guide users through the process, ensuring all required information is provided correctly.
 This approach offers several benefits for the user:
