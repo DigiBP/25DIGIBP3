@@ -52,7 +52,8 @@ This challenges highlights the need for digital transformation, which our To-Be 
 
 ## 2.1 Overview of the TO BE Process 
 
---> screenshot of the to be process 
+![To Be process](https://github.com/user-attachments/assets/bfd231ce-38e1-4368-b594-218a93f18703)
+
 
 - The process begins with the submission of a google form by the applicant.
 - The form is received and forwarded to the appropriate approver.
