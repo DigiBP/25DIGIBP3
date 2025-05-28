@@ -15,11 +15,18 @@
 
 # Project Goals
 
-The goal of our project is to digitalize the onboarding process for external partners in the IT department at the Universit of Basel. We will reach this goal by implementing decision logic using DMN tables, integrating services for approval handling and email notifications. The goal is also to improve the user experience by implementing a structured workflow and a digital form. Moreover the aim is to save time to the IT Service desk and handle better errors through automated activities.
+The goal of our project is to digitalize the onboarding process for IT maintenance account at the Universit of Basel. We will reach this goal by implementing decision logic using DMN tables, integrating services for approval handling and email notifications. The goal is also to improve the user experience by implementing a structured workflow and a digital form. Moreover the aim is to save time to the IT Service desk and handle better errors through automated activities.
 
 # 1. AS-IS Process
 
-The current onboarding process for IT maintenance accounts at the University of Basel is largely manual and fragmented. It involves multiple steps, approvals, and frequent back-and-forth communication, leading to inefficiencies and delays.
+The current onboarding process for IT maintenance accounts at the University of Basel is largely slow, paper-based and fragmented:
+Main pain points: 
+1. Inconsistent process execution: Every team executes the process differently. 
+2. Lack of transparency and standardization with most steps relying on ad-hoc execution. No clear feedback if it the request has been approved or rejected. 
+3. Manual effort is high as the form is paper-based. Lots of copying, pasting, and sending repetitive emails.
+4. Frequent back-and-forth communication between the IT Service Desk and the requestors leading to inefficiencies and delays.
+5. Lots of errors: service desk (and approver) did not correctly filled out the paper form or additional permissions
+
 
 The process follows these steps:
 	1. The applicant (typically an external partner) submits a request form via email or paper.
