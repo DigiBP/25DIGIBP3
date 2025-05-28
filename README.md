@@ -80,7 +80,7 @@ Swimlanes:
 
 1. Send Rejection Email: Sent when a request is denied.
 2. Send Email asking for feedback: Sent when additional information is required from the applicant.
-3. Receive Email Feedback: The applicant sends their feedback to a designated email adress.
+3. Receive Email Feedback: The applicant sends their feedback to a designated email address.
 4. Send Information Email: Sent after account creation to inform the applicant that credentials will be sent via post.
 
 Each email scenario is triggered via a "custom webhook" module and executed through "My others SMTP connections" using the module "send an email" except for the "Receive Email Feedback" which uses a Custom Mailhook and then sends the data to the process via HTTP PUSH.
@@ -195,11 +195,11 @@ In our To BE process we still have remaining user tasks such as:
 # 3. Benefits 
 
 1. Process Standardization
-- Ensures consistent handling of all onboarding requests.
+      - Ensures consistent handling of all onboarding requests.
 
 2. Automation of Repetitive Tasks
-- Automated email notifications (rejection, feedback request, approval).
-- Automatic routing to correct approver via decision tables.
+  - Automated email notifications (rejection, feedback request, approval).
+  - Automatic routing to correct approver via decision tables.
 
 3. Faster Turnaround Time
 - Requests are processed and routed immediately without waiting on manual forwarding.
