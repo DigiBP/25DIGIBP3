@@ -192,36 +192,32 @@ In our To BE process we still have remaining user tasks such as:
 - Read and Approve Answer (Feedback Loop)
 - Check the SAP response and approve
 
-# 3. Benefits 
+# 3. Key Benefits of our TO-BE Process
 
-1. Process Standardization
-      - Ensures consistent handling of all onboarding requests.
+1. Consistent Process Execution
+    - Camunda interface ensures every request follows the same clear and structured path/process — no more team-by-team variations.
 
-2. Automation of Repetitive Tasks
-  - Automated email notifications (rejection, feedback request, approval).
-  - Automatic routing to correct approver via decision tables.
+2. Increased Transparency
+    - Excel sheet: All form data is stored in structured sheets
+    - Camunda: Every step is traceable in Camunda.
+    - Emails: Applicants are kept informed with automated status emails.
 
-3. Faster Turnaround Time
-- Requests are processed and routed immediately without waiting on manual forwarding.
-- Feedback loops and approvals are streamlined, reducing unnecessary back-and-forth.
-  
-4. Improved User Experience
-- Applicants complete their request in a google form and not on paper anymore. 
-- Applicants receive immediate confirmation and updates via email.
+3. Reduced Manual Effort
+    - Google Forms: automatically collects and structures applicant data. No need for IT staff to retype or validate paper/email forms.
+    - Decision tables: automatically determine approver and permissions — eliminates manual routing and decision-making.
+    - Automated Emails: Instantly inform applicants at key steps. It avoids repetitive manual emailing by the service desk.
 
-5. Error Reduction
-- Decision tables reduce human error in determining permissions or routing logic.
+4. Improved Applicant Communication
+    - Emails: Applicants receive email notifications (feedback, rejection, information). It improves the user experience and the communication between applicants, approvers, and IT Service Desk. It also Speeds up approval cycles.
 
-6. Better Traceability and Transparency
-- More steps are logged and traceable (e.g.
-- Better traceability with the storage of the data form in the google sheet. 
+5. Fewer Human Errors
+    - DMN tables: route requests to the correct approver based on logic, not guesswork anymore.
+    - Digital form: The validation ensures more complete and correct input data.
 
-7. Integration with External Tools
-- Connected with Google Forms (front-end) and Make (workflow automation).
-- Simulated integration with SAP IDM, ready for future real system connections.
-  
-8. Time Savings for IT Staff
-- Fewer manual approvals and emails.
+6. Time Savings
+    - Overall processing time was reduced from 2 weeks to around 1 week or faster.
+
+
 
 
 # Technologies 
