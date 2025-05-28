@@ -15,7 +15,7 @@
 
 # Project Goals
 
-Digitalize and automate the IT maintenance account onboarding process by implementing decision logic using DMN tables, integrating external services for approval handling and email notifications. The goal is to improve the user experience through structured workflows and form submissions and also to save time the approver through automated activities.
+The goal of our project is to digitalize the onboarding process for external partners in the IT department at the Universit of Basel. We will reach this goal by implementing decision logic using DMN tables, integrating services for approval handling and email notifications. The goal is also to improve the user experience by implementing a structured workflow and a digital form. Moreover the aim is to save time to the IT Service desk and handle better errors through automated activities.
 
 # 1. AS-IS Process
 
