@@ -19,41 +19,37 @@ The goal of our project is to digitalize the onboarding process for IT maintenan
 
 # 1. AS-IS Process
 
-The current onboarding process for IT maintenance accounts at the University of Basel is largely slow, paper-based and fragmented:
-Main pain points: 
-1. Inconsistent process execution: Every team executes the process differently. 
-2. Lack of transparency and standardization with most steps relying on ad-hoc execution. No clear feedback if it the request has been approved or rejected. 
-3. Manual effort is high as the form is paper-based. Lots of copying, pasting, and sending repetitive emails.
-4. Frequent back-and-forth communication between the IT Service Desk and the requestors leading to inefficiencies and delays.
-5. Lots of errors: service desk (and approver) did not correctly filled out the paper form or additional permissions
-
-
 The process follows these steps:
-	1. The applicant (typically an external partner) submits a request form via email or paper.
-	2. The IT Service Desk (SD) manually verifies the completeness of the form.
-	3. If questions arises or details are missing, SD contacts the applicant, which can lead to multiple iterations.
-	4. Once complete, the request is forwarded to the appropriate approver.
-	5. The approver manually evaluates the request and either approves or rejects it.
-	6. If approved, the SD checks again if the request is complete and if the applicant has questions. 
-	7. Once approved by the SD, the IT Service Desk manually enters the data into the SAP IDM system.
-	8. SAP IDM creates account according to input 
-	9. The Service Desk receives the account details and manually generates a master data sheet for the applicant and send it via physical mail. 
-  	10. Once the applicant has set the password, the maintenance account is active 
+
+1. The applicant (typically an external partner) submits a request form via email or paper.
+2. The IT Service Desk (SD) manually verifies the completeness of the form.
+3. If questions arises or details are missing, SD contacts the applicant, which can lead to multiple iterations.
+4.  Once complete, the request is forwarded to the appropriate approver.
+5.  The approver manually evaluates the request and either approves or rejects it.
+6.  If approved, the SD checks again if the request is complete and if the applicant has questions.
+7.  Once approved by the SD, the IT Service Desk manually enters the data into the SAP IDM system.
+8.  SAP IDM creates account according to input
+9.  The Service Desk receives the account details and manually generates a master data sheet for the applicant and send it via physical mail.
+10. Once the applicant has set the password, the maintenance account is active 
 
 ![AS-IS Process](AS-IS%20Process.png)
 
 ## 1.1 Challenges of the AS-IS Process
 
-- The basic account types do not accommodate those diverse permission requirements, creating frequent mismatches with operational needs. This leads to the situation where permission requests cannot be fully handled through the form, necessitating additional steps via ticketing and the SD.
-	- The lack of automation in determining suitable accounts results in a manual and error-prone decision-making process.
-	- Frequent manual errors due to paper-based handling.
-	- No structured approval routing, causing inconsistent decision-making.The excessive signature requirements for the maintenance account cause confusion and inefficient communication with service providers (applicants). Also, sometimes the form is sent to the wrong approver.
-	- Security risks due to uncontrolled account expiration and access permissions. The applicant usually needs this account only once or twice per year. The existing account needs to be extended (or reactivated) once a year. The deletion of such an account is not yet controlled, meaning that after one year, it expires if not extended, but at the same time, it is not actively deleted (for example, if the service provider is changed).
-	- Every team handles the process and the permissions a bit differently. That is in part due to the different systems and their specifications that the different teams use. A system for managing a server differs from a system for managing networking and so on. Some internal interviews with employees of six different teams revealed the different use cases and requirements of those teams (see Appendix F: Notes from Internal Interviews (Intranet)).  (not sure if we keep that) 
+The current onboarding process for IT maintenance accounts at the University of Basel is largely slow, paper-based and fragmented: 
+
+Main pain points: 
+1. Inconsistent process execution: Every team executes the process differently.That is in part due to the different systems and their specifications that the different teams use. No structured approval routing, causing inconsistent decision-making. 
+2. Lack of transparency and standardization with most steps relying on ad-hoc execution. No clear feedback if it the request has been approved or rejected. 
+3. Manual effort is high as the form is paper-based. Lots of copying, pasting, and sending repetitive emails.
+4. Frequent back-and-forth communication between the IT Service Desk and the requestors leading to inefficiencies and delays.
+5. Lots of errors: service desk (and approver) did not correctly filled out the paper form or additional permissions due to paper-based 
+6. Security risks due to uncontrolled account expiration and access permissions. The applicant usually needs this account only once or twice per year. The existing account needs to be extended (or reactivated) once a year. The deletion of such an account is not yet controlled, meaning that after one year, it expires if not extended, but at the same time, it is not actively deleted (for example, if the service provider is changed)
+7. The lack of automation in determining suitable accounts results in a manual and error-prone decision-making process.
+
+The basic account types do not accommodate those diverse permission requirements, creating frequent mismatches with operational needs. This leads to the situation where permission requests cannot be fully handled through the form, necessitating additional steps via ticketing and the SD.
 
 This challenges highlights the need for digital transformation, which our To-Be process aims to address.
-
-
 
 # 2. TO-BE: 
 
