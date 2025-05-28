@@ -55,21 +55,21 @@ This challenges highlights the need for digital transformation, which our To-Be 
 
 ## 2.1 Overview of the TO BE Process 
 
-![To Be process](https://github.com/user-attachments/assets/bfd231ce-38e1-4368-b594-218a93f18703)
+![TO-BE Process Final](https://github.com/user-attachments/assets/2fbe2321-d153-4dcc-87ed-8d82503d2f47)
 
 
 - The process begins with the submission of a google form by the applicant.
-- The form is received and forwarded to the appropriate approver.
-- The approver checks the form for completeness and requests feedback if necessary.
+- The form is received and forwarded to the appropriate approver thanks to a DMN Table.
+- The approver checks the form for completeness and requests feedback via email if necessary.
 - A rejection email is sent if the request is denied.
-- If approved, the process continues with forwarding the form to the Service Desk. The Service Desk checks the thechnical requirements and also has the possibility to request feedback if necessary.
+- If approved, the process continues with forwarding the form to the Service Desk. The Service Desk checks the technical requirements and also has the possibility to request feedback if necessary.
 - If the Service Desk finds no problem, the account creation and password generation are initiated.
 - Account information and credentials are dispatched via post and the customer is informed via email.
-- The process outcomes are stored in a google sheet, and a confirmation email is sent to the applicant.
+- The process outcomes are stored in a google sheet. 
 
 Swimlanes: 
-- New: "Backend System" --> explanation? 
-- Removed: "SAP IDM" from swimlanes and added it in a new pool --> Explanation? 
+- New: "Backend System" --> explanation?
+- Removed: "SAP IDM" from swimlanes and added it in a new pool --> explanation?
 
 
 ## 2.2 How to run the process 
