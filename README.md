@@ -235,9 +235,9 @@ In our To BE process we still have remaining user tasks such as:
 
 # Running the Process
 Prerequisites: All Make flows need to be enabled (please contact us for the credentials - they are not stored in this repo).
-Start the process by sending a form from <url> or alternatively, send a postman request:
+Start the process by sending a form from [here](https://docs.google.com/forms/d/e/1FAIpQLSea-0HtM9R-xmhIi_mgwiHobRF19CRoh99BCgfs29c-1UIEvA/viewform) or alternatively, send a postman request:
 - url: https://digibp.engine.martinlab.science/engine-rest/process-definition/key/unibas-reg-process/tenant-id/25DIGIBP11/start
-- payload (please change businessKey and bK with each start to something unique - also be sure to utilize "Faculty of Law" for orgUnit, and change the email to yours so you can receive the automated emails):
+- payload (please change businessKey and bK with each start to something unique - also be sure to utilize "Faculty of Law" for Organisation Unit, "Solutions AG" for Company Name, "Web-Applications (WApp)" for IT-Team, and change the email to yours so you can receive the automated emails):
 ```
 "businessKey": "sampleUniqueKey1",
 "variables": {
