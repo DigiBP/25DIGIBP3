@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1elpccr" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.32.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.22.0">
+  <decision id="Decision_Approver" name="Forward To Approver">
+    <informationRequirement id="InformationRequirement_1a69iiz">
+      <requiredInput href="#InputData_0k5kk1e" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_1n73qvs">
+      <requiredInput href="#InputData_1qbj58u" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_1tsz3dt">
+      <input id="Input_1" label="Department" biodi:width="192" camunda:inputVariable="orgUnit">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text></text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0rjado6">
+          <text>"Faculty of Law","Faculty of Medicin","Faculty of Philosophy and History","Faculty of Humanities and Natural Sciences","Faculty of Economics","Faculty of Psychology","University of Basel","Faculty of Theology"</text>
+        </inputValues>
+      </input>
+      <output id="Output_1" label="Approver" name="candidateGroupApprover" typeRef="string" biodi:width="229">
+        <outputValues id="UnaryTests_0rehffa">
+          <text>"25DIGIBP11unibasDepA","25DIGIBP11unibasDepB"</text>
+        </outputValues>
+      </output>
+      <rule id="DecisionRule_1xlh81l">
+        <inputEntry id="UnaryTests_03jbjkx">
+          <text>"Faculty of Theology"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0j99fzk">
+          <text>"25DIGIBP11unibasDepA"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_095xf67">
+        <inputEntry id="UnaryTests_0htold4">
+          <text>"Faculty of Law"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0gssr8m">
+          <text>"25DIGIBP11unibasDepB"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0jkp0nt">
+        <inputEntry id="UnaryTests_0sxd8i4">
+          <text>"Faculty of Medicin"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0kqg4wy">
+          <text>"25DIGIBP11unibasDepA"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0hrsr3r">
+        <inputEntry id="UnaryTests_1461tfq">
+          <text>"Faculty of Philosophy and History"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ukrlz0">
+          <text>"25DIGIBP11unibasDepA"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ogci4f">
+        <inputEntry id="UnaryTests_1nnlklw">
+          <text>"Faculty of Humanities and Natural Sciences"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0f1uxr9">
+          <text>"25DIGIBP11unibasDepA"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1wszal8">
+        <inputEntry id="UnaryTests_0dj1g54">
+          <text>"Faculty of Economics"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1utqouc">
+          <text>"25DIGIBP11unibasDepA"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0d09egd">
+        <inputEntry id="UnaryTests_1tv9ooe">
+          <text>"Faculty of Psychology"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0lkqi7d">
+          <text>"25DIGIBP11unibasDepA"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1oyh7nx">
+        <inputEntry id="UnaryTests_17bv6dn">
+          <text>"University of Basel"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1j0uelg">
+          <text>"25DIGIBP11unibasDepA"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_1qbj58u" name="Faculty" />
+  <knowledgeSource id="KnowledgeSource_10q6zb8" name="Business knowledge">
+    <authorityRequirement id="AuthorityRequirement_18eya51">
+      <requiredInput href="#InputData_0k5kk1e" />
+    </authorityRequirement>
+  </knowledgeSource>
+  <inputData id="InputData_0k5kk1e" name="Approver list" />
+  <knowledgeSource id="KnowledgeSource_10o01tk" name="Form">
+    <authorityRequirement id="AuthorityRequirement_1pfdttz">
+      <requiredInput href="#InputData_1qbj58u" />
+    </authorityRequirement>
+  </knowledgeSource>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_Approver">
+        <dc:Bounds height="80" width="180" x="220" y="100" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_1kk8dw6" dmnElementRef="InputData_1qbj58u">
+        <dc:Bounds height="45" width="125" x="127" y="258" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_1p07t9b" dmnElementRef="KnowledgeSource_10q6zb8">
+        <dc:Bounds height="63" width="100" x="351" y="338" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_0dlp3r8" dmnElementRef="InputData_0k5kk1e">
+        <dc:Bounds height="45" width="125" x="338" y="238" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1pwt4sv" dmnElementRef="AuthorityRequirement_18eya51">
+        <di:waypoint x="400" y="283" />
+        <di:waypoint x="401" y="338" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_0mk7rvr" dmnElementRef="InformationRequirement_1a69iiz">
+        <di:waypoint x="401" y="238" />
+        <di:waypoint x="340" y="200" />
+        <di:waypoint x="340" y="180" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_0pxonvg" dmnElementRef="InformationRequirement_1n73qvs">
+        <di:waypoint x="190" y="258" />
+        <di:waypoint x="280" y="200" />
+        <di:waypoint x="280" y="180" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0s029aj" dmnElementRef="KnowledgeSource_10o01tk">
+        <dc:Bounds height="63" width="100" x="140" y="338" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1myttfg" dmnElementRef="AuthorityRequirement_1pfdttz">
+        <di:waypoint x="190" y="303" />
+        <di:waypoint x="190" y="338" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

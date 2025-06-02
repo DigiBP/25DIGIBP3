@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Account_permissions" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.32.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.22.0">
+  <decision id="Decision_Permissions" name="Account permissions">
+    <decisionTable id="DecisionTable_0l4mvtc">
+      <input id="Input_1" label="Name of ext. partner" camunda:inputVariable="companyName">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>companyName</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0onkjim">
+          <text>"BaseVision","SWITCH","Techcord","Netcloud","Solutions AG","Associate","Other / None"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_10j2e9u" label="Name of int. team" camunda:inputVariable="uTeam">
+        <inputExpression id="LiteralExpression_1yk4m1y" typeRef="string">
+          <text>uTeam</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0y0sjs8">
+          <text>"IT Security and Architecture (ITSA)","Cloud Competence Center (CTT)","Management","Project Management Office &amp; Professional Services (PMO/PRS)","Services and Support (SaS)","Service Desk (SD)","Web-Applications (WApp)","Compute / Storage &amp; Platforms (CSP)","Other / None"</text>
+        </inputValues>
+      </input>
+      <output id="Output_1" label="Permission" name="Assigned_Permission" typeRef="string">
+        <outputValues id="UnaryTests_09nutw0">
+          <text>"Azure / M365 / Microsoft Teams","Adam","None","Basic","Associate"</text>
+        </outputValues>
+      </output>
+      <output id="OutputClause_1eoj9qk" label="Basic yes/no" name="Basic" typeRef="boolean" />
+      <rule id="DecisionRule_0tm7o8e">
+        <inputEntry id="UnaryTests_19vyevb">
+          <text>"Other / None"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wl3024">
+          <text>"Management","Project Management Office &amp; Professional Services (PMO/PRS)","Services and Support (SaS)","Service Desk (SD)"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1sem53u">
+          <text>"None"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0ftpqg0">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1e74dj6">
+        <inputEntry id="UnaryTests_00rdbxw">
+          <text>"BaseVision","SWITCH","Techcord","Netcloud"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fyvre1">
+          <text>"IT Security and Architecture (ITSA)","Cloud Competence Center (CTT)"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_130oscc">
+          <text>"Azure / M365 / Microsoft Teams"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0ad9s2l">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1fpw5cv">
+        <inputEntry id="UnaryTests_0evvi66">
+          <text>"Solutions AG"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gw76jm">
+          <text>"Web-Applications (WApp)","Compute / Storage &amp; Platforms (CSP)"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ea9c28">
+          <text>"Adam"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0vz790j">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1rrne5y">
+        <inputEntry id="UnaryTests_17auecs">
+          <text>"Other / None"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tgqicz">
+          <text>"Web-Applications (WApp)","Compute / Storage &amp; Platforms (CSP)"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1avrtuf">
+          <text>"Adam"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0nflhhd">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_017nde7">
+        <inputEntry id="UnaryTests_1c2e664">
+          <text>"Associate"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0numbvb">
+          <text>"Other / None"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ylq8qo">
+          <text>"Associate"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0njfsy1">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1klffek">
+        <inputEntry id="UnaryTests_1wcq6c2">
+          <text>"Other / None"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05hwq56">
+          <text>"Other / None"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0261yyy">
+          <text>"Basic"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_00rci6c">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_Permissions">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
