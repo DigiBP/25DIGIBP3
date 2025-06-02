@@ -68,8 +68,8 @@ This challenges highlights the need for digital transformation, which our To-Be 
 - The process outcomes are stored in a google sheet. 
 
 Swimlanes: 
-- New: "Backend System" --> explanation?
-- Removed: "SAP IDM" from swimlanes and added it in a new pool --> explanation?
+- New: "Backend System" It refers to the hosted Camunda instance that handles the process execution.
+- Removed: "SAP IDM" from swimlanes and added it in a new pool, as the SAP system is an "external" system to the process.
 
 
 ## 2.2 How to run the process 
