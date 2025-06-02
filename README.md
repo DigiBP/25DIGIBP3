@@ -231,7 +231,48 @@ In our To BE process we still have remaining user tasks such as:
 - HTTP Requests                   
 - Google Forms                 
 - Google Sheets                  
-- GMX Email Adress 
+- GMX Email Adress
+
+# Running the Process
+Prerequisites: All Make flows need to be enabled (please contact us for the credentials - they are not stored in this repo).
+Start the process by sending a form from <url> or alternatively, send a postman request:
+- url: https://digibp.engine.martinlab.science/engine-rest/process-definition/key/unibas-reg-process/tenant-id/25DIGIBP11/start
+- payload (please change businessKey and bK with each start to something unique - also be sure to utilize "Faculty of Law" for orgUnit, and change the email to yours so you can receive the automated emails):
+```
+"businessKey": "sampleUniqueKey1",
+"variables": {
+    "bK": {
+            "value": "sampleUniqueKey1",
+            "type": "String"
+        },
+    "timestamp": { "value": "timestamp", "type": "String" },
+    "companyName": { "value": "Solutions AG", "type": "String" },
+    "cStreetNr": { "value": "cStreetNr", "type": "String" },
+    "cPostcode": { "value": "cPostcode", "type": "String" },
+    "cCity": { "value": "cCity", "type": "String" },
+    "cPhone": { "value": "cPhone", "type": "String" },
+    "cEmail": { "value": "jan.locher+client@hotmail.ch", "type": "String" },
+    "eSurname": { "value": "Jan", "type": "String" },
+    "eFamilyName": { "value": "Locher", "type": "String" },
+    "ePhone": { "value": "ePhone", "type": "String" },
+    "eEmail": { "value": "jan.locher+employee@hotmail.ch", "type": "String" },
+    "uName": { "value": "uName", "type": "String" },
+    "uPhone": { "value": "uPhone", "type": "String" },
+    "uEmail": { "value": "jan.locher+uni@hotmail.ch", "type": "String" },
+    "uTeam": { "value": "Web-Applications (WApp)", "type": "String" },
+    "purpose": { "value": "purpose", "type": "String" },
+    "orgUnit": { "value": "Faculty of Law", "type": "String" },
+    "duration": { "value": "duration", "type": "String" },
+    "addRequirements": { "value": "addRequirements", "type": "String" },
+    "description": { "value": "description", "type": "String" },
+    "uniCard": { "value": "uniCard", "type": "String" },
+    "uniPrintReason": { "value": "uniPrintReason", "type": "String" },
+    "signatureDate": { "value": "signatureDate", "type": "String" },
+    "signature": { "value": "signature", "type": "String" }
+  }
+}
+```
+Then login to camunda with user 25DIGIBP11Maxsen (password: password) and complete the tasks assigned to this user group.
 
 
 # Conclusion 
